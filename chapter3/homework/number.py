@@ -14,4 +14,3 @@ while True:
     else:
         print("Vous avez bien deviné le nombre et vous avez deviné " + str(count) + " fois au total")
         break
-else:
