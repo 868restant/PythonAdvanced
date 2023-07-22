@@ -18,7 +18,7 @@ while True:
 '''
 import random
 num = random.randint(1,10)
-print(num)
+
 number = int(input("veuillez devinez un numero :"))
 if number < num :
     print("votre nombre est trop petit")
