@@ -1,3 +1,4 @@
+'''
 import random
 random_number = random.randint(1, 10)
 count = 0
@@ -14,3 +15,54 @@ while True:
     else:
         print("Vous avez bien deviné le nombre et vous avez deviné " + str(count) + " fois au total")
         break
+'''
+import random
+num = random.randint(1,3)
+count = 0
+while True:
+    if count == 3:
+        print("game over")
+        break
+    number = int(input("veuillez devinez un numero :"))
+    if number == num:
+        print("felicitation")
+
+    else:
+        print("mauvaise reponse encore une fois ")
+        number = int(input("veuillez devinez un numero :"))
+        if number == num:
+            print("felicitation")
+        else:
+            print("mauvaise reponse encore une fois ")
+            number = int(input("veuillez devinez un numero :"))
+            if number == num:
+                print("felicitation")
+            else:
+                print("désolé, vous avez mal devine")
+                break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
