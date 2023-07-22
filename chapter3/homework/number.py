@@ -17,7 +17,7 @@ while True:
         break
 '''
 import random
-num = random.randint(1,3)
+num = random.randint(1,10)
 count = 0
 while True:
     if count == 3:
@@ -39,30 +39,5 @@ while True:
                 print("felicitation")
             else:
                 print("désolé, vous avez mal devine")
+                count = count + 1
                 break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
