@@ -18,26 +18,33 @@ while True:
 '''
 import random
 num = random.randint(1,10)
-count = 0
-while True:
-    if count == 3:
-        print("game over")
-        break
+print(num)
+number = int(input("veuillez devinez un numero :"))
+if number < num :
+    print("votre nombre est trop petit")
+if number > num :
+    print("votre nombre est trop grand")
+if number == num:
+    print("felicitation")
+
+else:
+    print("mauvaise reponse encore une fois ")
     number = int(input("veuillez devinez un numero :"))
+    if number > num :
+        print("votre nombre est trop grand")
+    if number < num:
+        print("votre nombre est trop petit")
     if number == num:
         print("felicitation")
-
     else:
         print("mauvaise reponse encore une fois ")
         number = int(input("veuillez devinez un numero :"))
+        if number < num :
+            print("votre nombre est trop petit")
+        if number > num :
+            print("votre nombre esr trop grand")
         if number == num:
             print("felicitation")
         else:
-            print("mauvaise reponse encore une fois ")
-            number = int(input("veuillez devinez un numero :"))
-            if number == num:
-                print("felicitation")
-            else:
-                print("désolé, vous avez mal devine")
-                count = count + 1
-                break
+            print("vous avez épuiser vos trois chance, est vous n'avez pas deviné le bon nombre")
+
